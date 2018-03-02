@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%= form_for @dog do |f| %>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+      <%= f.label :breed %>
+      <%= f.text_field :breed %>
+      <%= f.label :sled_id %>
+      <%= f.number_field :sled_id %>
+      <%= f.submit %>
+    <% end %>
+  </body>
+</html>

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+      <% @dogs.each do |dog| %>
+      <div class='dogs'> <%= dog.name %> </div>
+      <div> <%= dog.breed %> </div>
+      <% end %>
+  </body>
+</html>

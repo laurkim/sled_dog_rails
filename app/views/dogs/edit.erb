@@ -1,0 +1,6 @@
+<%= form_for @dog do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.collection_select :sled_id, Sled.all, :id, :name %>
+  <%= f.submit %>
+<% end %>
